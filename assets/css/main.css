@@ -24,10 +24,10 @@ body {
   color: var(--text);
   line-height: 1.55;
   min-height: 100vh;
-  padding: 24px 16px 90px;
+  padding: 24px 1% 90px;
 }
 
-.container { max-width: 980px; margin: 0 auto; }
+.container { width: 100%; max-width: none; margin: 0 auto; }
 
 /* ========== HEADER ========== */
 header {
@@ -173,6 +173,46 @@ h1 {
 
 /* ========== DASHBOARD ========== */
 #dashboard { display: none; }
+
+/* Layout: task grid */
+.dashboard-top { display:flex; flex-direction:column; gap:12px; margin-bottom:18px; }
+.dashboard-main { display:grid; gap:24px; }
+.task-row {
+  display:grid;
+  grid-template-columns:minmax(320px,0.45fr) minmax(420px,0.55fr);
+  gap:24px;
+  align-items:stretch;
+}
+.task-row .card {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+.task-row .card .prompt {
+  flex: 1;
+}
+.writing-card {
+  display: flex;
+  flex-direction: column;
+}
+.writing-card textarea {
+  width:100%;
+  min-height:220px;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--bg);
+  flex: 1;
+}
+.writing-card .word-count {
+  margin-top: 12px;
+}
+.full-width-section { display:grid; gap:14px; }
+
+@media (max-width:900px) {
+  .task-row { grid-template-columns:1fr; }
+}
 
 .mode-bar {
   display: flex;

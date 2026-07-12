@@ -61,91 +61,108 @@
     <!-- ========== DASHBOARD ========== -->
     <div id="dashboard">
 
-      <!-- Mode bar -->
-      <div class="mode-bar" id="modeBar">
-        <!-- filled by JS -->
+      <!-- TOP SECTION: mode bar + prompt select -->
+      <div class="dashboard-top">
+        <div class="mode-bar" id="modeBar">
+          <!-- filled by JS -->
+        </div>
+
+        <div class="prompt-row" id="promptRow">
+          <span class="prompt-label">Select prompt:</span>
+          <select class="prompt-select" id="promptSelect" onchange="onPromptChange()">
+            <!-- options filled by JS -->
+          </select>
+        </div>
       </div>
 
-      <!-- Prompt dropdown -->
-      <div class="prompt-row" id="promptRow">
-        <span class="prompt-label">Select prompt:</span>
-        <select class="prompt-select" id="promptSelect" onchange="onPromptChange()">
-          <!-- options filled by JS -->
-        </select>
-      </div>
-
-      <!-- Task 1 -->
-      <div class="card" id="task1Card">
-        <div class="card-header">
-          <div class="card-title">
-            Writing Task 1
-            <span class="badge" id="t1Badge">General Training</span>
-          </div>
-          <div class="timer-box">
-            <span class="timer" id="t1Timer">20:00</span>
-            <div class="timer-controls">
-              <button onclick="toggleTimer(1)" id="t1Play">▶</button>
-              <button onclick="resetTimer(1)">↺</button>
+      <!-- MAIN: aligned task rows -->
+      <div class="dashboard-main">
+        <div class="task-row">
+          <div class="card" id="task1Card">
+            <div class="card-header">
+              <div class="card-title">
+                Writing Task 1
+                <span class="badge" id="t1Badge">General Training</span>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="meta">
-          <span>⏱ About 20 minutes</span>
-          <span>📝 At least 150 words</span>
-          <span id="t1Tone">Tone: Formal</span>
-        </div>
-
-        <div class="prompt" id="t1Prompt"></div>
-
-        <textarea id="t1Answer" placeholder="Write your Task 1 answer here under real exam conditions (no AI, no dictionary)…"
-                  oninput="updateWordCount(1)"></textarea>
-        <div class="word-count" id="t1Count">0 words</div>
-      </div>
-
-      <!-- Task 2 -->
-      <div class="card" id="task2Card">
-        <div class="card-header">
-          <div class="card-title">
-            Writing Task 2
-            <span class="badge essay" id="t2Badge">Essay</span>
-          </div>
-          <div class="timer-box">
-            <span class="timer" id="t2Timer">40:00</span>
-            <div class="timer-controls">
-              <button onclick="toggleTimer(2)" id="t2Play">▶</button>
-              <button onclick="resetTimer(2)">↺</button>
+            <div class="meta">
+              <span>⏱ About 20 minutes</span>
+              <span>📝 At least 150 words</span>
+              <span id="t1Tone">Tone: Formal</span>
             </div>
+
+            <div class="prompt" id="t1Prompt"></div>
+          </div>
+
+          <div class="card writing-card" id="task1Write">
+            <div class="card-header">
+              <div class="card-title">Task 1 Writing</div>
+              <div class="timer-box">
+                <span class="timer" id="t1Timer">20:00</span>
+                <div class="timer-controls">
+                  <button onclick="toggleTimer(1)" id="t1Play">▶</button>
+                  <button onclick="resetTimer(1)">↺</button>
+                </div>
+              </div>
+            </div>
+
+            <textarea id="t1Answer" placeholder="Write your Task 1 answer here under real exam conditions (no AI, no dictionary)…" oninput="updateWordCount(1)"></textarea>
+            <div class="word-count" id="t1Count">0 words</div>
           </div>
         </div>
 
-        <div class="meta">
-          <span>⏱ About 40 minutes</span>
-          <span>📝 At least 250 words</span>
+        <div class="task-row">
+          <div class="card" id="task2Card">
+            <div class="card-header">
+              <div class="card-title">
+                Writing Task 2
+                <span class="badge essay" id="t2Badge">Essay</span>
+              </div>
+            </div>
+
+            <div class="meta">
+              <span>⏱ About 40 minutes</span>
+              <span>📝 At least 250 words</span>
+            </div>
+
+            <div class="prompt" id="t2Prompt"></div>
+          </div>
+
+          <div class="card writing-card" id="task2Write">
+            <div class="card-header">
+              <div class="card-title">Task 2 Writing</div>
+              <div class="timer-box">
+                <span class="timer" id="t2Timer">40:00</span>
+                <div class="timer-controls">
+                  <button onclick="toggleTimer(2)" id="t2Play">▶</button>
+                  <button onclick="resetTimer(2)">↺</button>
+                </div>
+              </div>
+            </div>
+
+            <textarea id="t2Answer" placeholder="Write your Task 2 essay here under real exam conditions…" oninput="updateWordCount(2)"></textarea>
+            <div class="word-count" id="t2Count">0 words</div>
+          </div>
         </div>
 
-        <div class="prompt" id="t2Prompt"></div>
+        <div class="full-width-section">
+          <div class="card hidden" id="feedbackCard">
+            <div class="card-header">
+              <div class="card-title">Paste your writing for feedback</div>
+            </div>
+            <div class="meta">
+              <span>Paste any Task 1, Task 2, or full mock answer</span>
+            </div>
+            <textarea id="feedbackText" placeholder="Paste your complete answer(s) here…" style="min-height:260px;"></textarea>
+          </div>
 
-        <textarea id="t2Answer" placeholder="Write your Task 2 essay here under real exam conditions…"
-                  oninput="updateWordCount(2)"></textarea>
-        <div class="word-count" id="t2Count">0 words</div>
-      </div>
-
-      <!-- Feedback only -->
-      <div class="card hidden" id="feedbackCard">
-        <div class="card-header">
-          <div class="card-title">Paste your writing for feedback</div>
+          <div class="tips">
+            <strong>Real exam rules:</strong>  
+            No dictionaries • No notes • No AI help while writing • Do not exceed the recommended time.  
+            When finished, click the purple button to copy a clean message for Grok.
+          </div>
         </div>
-        <div class="meta">
-          <span>Paste any Task 1, Task 2, or full mock answer</span>
-        </div>
-        <textarea id="feedbackText" placeholder="Paste your complete answer(s) here…" style="min-height:260px;"></textarea>
-      </div>
-
-      <div class="tips">
-        <strong>Real exam rules:</strong>  
-        No dictionaries • No notes • No AI help while writing • Do not exceed the recommended time.  
-        When finished, click the purple button to copy a clean message for Grok.
       </div>
     </div>
   </div>

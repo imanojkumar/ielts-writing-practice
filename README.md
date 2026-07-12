@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-→ [https://YOUR-USERNAME.github.io/ielts-writing-practice/](https://YOUR-USERNAME.github.io/ielts-writing-practice/)
+→ [https://imanojkumar.github.io/ielts-writing-practice/](https://imanojkumar.github.io/ielts-writing-practice/)
 
 *(Replace with your actual GitHub Pages URL after setup)*
 
