@@ -244,6 +244,142 @@ Give reasons for your answer and include any relevant examples from your own kno
 
 Write at least 250 words.`
         }
+      },
+      {
+        id: "gt-full-8",
+        label: "Library membership + Education costs",
+        t1: {
+          tone: "Formal",
+          text: `You should spend about 20 minutes on this task.
+
+You would like to become a member of a local library and want to ask for information about membership.
+
+Write a letter to the library manager. In your letter:
+• explain why you want to join
+• ask about membership fees and opening hours
+• mention any facilities you would like to use
+
+Write at least 150 words.
+
+You do NOT need to write any addresses.
+Begin your letter as follows:
+
+Dear Sir or Madam,`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Some people think that education should be free for everyone, while others believe students should pay for their own education.
+Discuss both views and give your own opinion.
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "gt-full-9",
+        label: "Apartment inspection + Climate change",
+        t1: {
+          tone: "Semi-formal",
+          text: `You should spend about 20 minutes on this task.
+
+You are renting an apartment and want to report a problem that was noticed during an inspection.
+
+Write a letter to the landlord. In your letter:
+• describe the problem clearly
+• explain when you noticed it
+• say what you would like the landlord to do
+
+Write at least 150 words.
+
+You do NOT need to write any addresses.
+Begin your letter as follows:
+
+Dear Mr / Ms … ,`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Climate change is one of the biggest challenges facing the world today.
+What are the main causes of climate change and what can individuals do to reduce its effects?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "gt-full-10",
+        label: "Bank card issue + Healthy lifestyle",
+        t1: {
+          tone: "Formal",
+          text: `You should spend about 20 minutes on this task.
+
+You have had a problem with your bank card and want to ask the bank for help.
+
+Write a letter to the bank manager. In your letter:
+• describe the problem
+• explain how it affected you
+• say what you would like the bank to do
+
+Write at least 150 words.
+
+You do NOT need to write any addresses.
+Begin your letter as follows:
+
+Dear Sir or Madam,`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Many people find it difficult to maintain a healthy lifestyle.
+What are the reasons for this and what can be done to encourage healthier habits?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "gt-full-11",
+        label: "Sports centre membership + Remote learning",
+        t1: {
+          tone: "Informal",
+          text: `You should spend about 20 minutes on this task.
+
+You are considering joining a sports centre and want more information before you sign up.
+
+Write a letter to the centre manager. In your letter:
+• ask about membership options
+• enquire about classes and facilities
+• ask about the opening times and prices
+
+Write at least 150 words.
+
+You do NOT need to write any addresses.
+Begin your letter as follows:
+
+Dear … ,`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Remote learning has become more common in recent years.
+Do the advantages of online education outweigh the disadvantages?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
       }
     ],
     t1: [
@@ -668,6 +804,110 @@ Write about the following topic:
 
 Online shopping is becoming more popular than shopping in traditional stores.
 Do the advantages of this trend outweigh the disadvantages?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "ac-full-7",
+        label: "Water usage chart + Digital education",
+        t1: {
+          tone: "Academic",
+          text: `You should spend about 20 minutes on this task.
+
+The line graph shows the amount of water used per household in a city over a ten-year period.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Write at least 150 words.`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Digital technology has changed the way students learn.
+What are the benefits and drawbacks of this development?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "ac-full-8",
+        label: "Traffic maps + Urban green spaces",
+        t1: {
+          tone: "Academic",
+          text: `You should spend about 20 minutes on this task.
+
+The two maps show a town centre before and after improvements to road systems and public spaces.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Write at least 150 words.`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Many cities are trying to create more green spaces for residents.
+Why is this important and what can governments do to achieve it?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "ac-full-9",
+        label: "Employment pie chart + Career choices",
+        t1: {
+          tone: "Academic",
+          text: `You should spend about 20 minutes on this task.
+
+The pie charts compare the distribution of employment in a country across different sectors in 2010 and 2020.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Write at least 150 words.`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Young people often choose careers based on salary rather than personal interest.
+Is this a positive or negative trend?
+
+Give reasons for your answer and include any relevant examples from your own knowledge or experience.
+
+Write at least 250 words.`
+        }
+      },
+      {
+        id: "ac-full-10",
+        label: "Coffee shop process + Public transport",
+        t1: {
+          tone: "Academic",
+          text: `You should spend about 20 minutes on this task.
+
+The diagram illustrates the process of making coffee from beans to the final drink.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Write at least 150 words.`
+        },
+        t2: {
+          text: `You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+Public transport systems in many cities are overcrowded and inefficient.
+What are the main reasons for this and how can it be improved?
 
 Give reasons for your answer and include any relevant examples from your own knowledge or experience.
 
