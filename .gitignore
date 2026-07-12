@@ -1,5 +1,9 @@
-.worktrees/
 .DS_Store
 Thumbs.db
 *.log
 .session/
+.grok/*
+.worktrees/*
+README1.md
+ielts-writing-practice/
+ielts-writing-practice/*
